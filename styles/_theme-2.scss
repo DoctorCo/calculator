@@ -1,0 +1,71 @@
+.body2 {
+    background-color: $main-background-theme-2;
+}
+
+.top2 {
+    h1 {
+        color: black;
+    }
+    p {
+        color: black;
+    }
+}
+
+.toggler2 {
+    background-color: $toggle-keypad-background-theme-2;
+}
+
+.circle2 {
+    background-color: $key-background-orange-theme-2;
+}
+
+.btn2 {
+    color: black;
+    background: transparent;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.output2 {
+    background-color: $screen-background-theme-2;
+    h1 {
+        color: black;
+    }
+}
+
+.key-container2 {
+    background-color: $toggle-keypad-background-theme-2;
+}
+
+.key2 {
+    border-color: white;
+    color: $text-grayish-yellow-theme-2;
+}
+
+.key-reset2,
+.key-del2 {
+    background-color: $key-background-dark-cyan-theme-2;
+    border-color: $key-background-dark-cyan-theme-2;
+    color: white;
+}
+
+.key-equal2 {
+    background-color: $key-background-orange-theme-2;
+    border-color: $key-background-orange-theme-2;
+    color: white;
+}

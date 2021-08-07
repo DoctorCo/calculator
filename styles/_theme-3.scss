@@ -1,0 +1,72 @@
+.body3 {
+    background-color: $main-background-theme-3;
+}
+
+.top3 {
+    h1 {
+        color: $text-light-yellow-theme-3;
+    }
+    p {
+        color: $text-light-yellow-theme-3;
+    }
+}
+
+.toggler3 {
+    background-color: $toggle-keypad-background-theme-3;
+}
+
+.circle3 {
+    background-color: $key-background-pure-cyan-theme-3;
+}
+
+.btn3 {
+    color: $text-light-yellow-theme-3;
+    background: transparent;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $text-light-yellow-theme-3;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.output3 {
+    background-color: $toggle-keypad-background-theme-3;
+    h1 {
+        color: $text-light-yellow-theme-3;
+    }
+}
+
+.key-container3 {
+    background-color: $toggle-keypad-background-theme-3;
+}
+
+.key3 {
+    border-color: $key-shadow-dark-magneta-theme-3;
+    color: $text-light-yellow-theme-3;
+    background-color: $key-background-dark-violet-theme-3;
+}
+
+.key-reset3,
+.key-del3 {
+    background-color: $key-shadow-vivid-magnet-theme-3;
+    border-color: $key-shadow-vivid-magnet-theme-3;
+    color: white;
+}
+
+.key-equal3 {
+    background-color: $key-background-pure-cyan-theme-3;
+    border-color: $key-background-pure-cyan-theme-3;
+    color: black;
+}

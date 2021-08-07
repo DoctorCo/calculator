@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'theme-1';
+@import 'theme-2';
+@import 'theme-3';
+@import 'main_element';
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 30rem;
+    min-width: 18rem;
+}
+
+body,
+main,
+div,
+button,
+h1,
+p {
+    transition: all .3s;
+    // overflow: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.key-big {
+    width: 11rem;
+    @include width535 {
+        width: 7rem;
+    }
+}

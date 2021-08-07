@@ -1,0 +1,73 @@
+.body1 {
+    background-color: $main-background-theme-1;
+}
+
+.top1 {
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
+
+.toggler1 {
+    background-color: $toggle-keypad-background-theme-1;
+}
+
+.circle1 {
+    background-color: $key-background-red-theme-1;
+    transform: translateX(0%);
+}
+
+.btn1 {
+    color: white;
+    background: transparent;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.output1 {
+    background-color: $screen-background-theme1;
+    h1 {
+        color: white;
+    }
+}
+
+.key-container1 {
+    background-color: $toggle-keypad-background-theme-1;
+}
+
+.key1 {
+    border-color: aliceblue;
+    color: $text-grayish-blue-theme-1;
+    border-bottom-width: 5px;
+}
+
+.key-reset1,
+.key-del1 {
+    background-color: $key-background-dark-blue-theme-1;
+    border-color: $key-shadow-dark-blue-theme-1;
+    color: white;
+}
+
+.key-equal1 {
+    background-color: $key-background-red-theme-1;
+    border-color: $key-background-red-theme-1;
+    color: white;
+}
